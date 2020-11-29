@@ -1,17 +1,18 @@
 .advantages__item {
   margin-left: 30px;
-}
-.advantages__item:first-child {
-  margin-left: 0;
-}
-.advantages__item::before {
-  margin-bottom: 30px;
-  display: block;
-  content: "";
-  height: 120px;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-color: var(--bgc-button-secondary);
+
+  &:first-child {
+    margin-left: 0;
+  }
+  &::before {
+    margin-bottom: 30px;
+    display: block;
+    content: "";
+    height: 120px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: var(--bgc-button-secondary);
+  }
 }
 .icon-antenna::before {
   background-image: url(../images/antenna.png);

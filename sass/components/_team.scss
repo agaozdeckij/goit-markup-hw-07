@@ -42,9 +42,10 @@
 }
 .team__card {
   margin-left: 30px;
-}
-.team__card:first-child {
-  margin-left: 0;
+
+  &:first-child {
+    margin-left: 0;
+  }
 }
 .team__content {
   padding-top: 0;
@@ -60,14 +61,22 @@
   padding: 0;
   margin: 0;
   background-color: var(--primary-white-color);
+
+  & {
+    padding-bottom: 30px;
+  }
 }
 
-.icon-list {
-  padding-bottom: 30px;
-}
 .icon-list__item {
   margin-right: 10px;
   border-radius: 50%;
+
+  &:first-child {
+    margin-left: 32px;
+  }
+  &:last-child {
+    margin-right: 32px;
+  }
 }
 .icon-link__item {
   display: block;
@@ -80,12 +89,7 @@
   height: 44px;
   background-color: var(--primary-white-color);
 }
-.icon-list__item:first-child {
-  margin-left: 32px;
-}
-.icon-list__item:last-child {
-  margin-right: 32px;
-}
+
 .icon-link {
   fill: var(--pc-icon-color);
 }
