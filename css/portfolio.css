@@ -303,6 +303,22 @@ header {
   margin-bottom: 94px;
 }
 
+.work-examples .title {
+  color: var(--title-text-color);
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+
+.work-examples .text {
+  color: var(--primary-text-color);
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.03em;
+}
+
 .work-examples .link {
   text-decoration: none;
 }
@@ -351,6 +367,12 @@ header {
   padding: 20px 24px 4px;
 }
 
+.card-info .text {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding: 0px 24px 20px;
+}
+
 .card-product {
   display: block;
 }
@@ -367,6 +389,12 @@ header {
 
 .card-product:hover .product-thumb::before,
 .card-product:focus .product-thumb::before {
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+}
+
+.card-product:hover .overlay-text,
+.card-product:focus .overlay-text {
   -webkit-transform: translateY(0);
           transform: translateY(0);
 }
@@ -394,34 +422,6 @@ header {
   transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.card-product:hover .overlay-text,
-.card-product:focus .overlay-text {
-  -webkit-transform: translateY(0);
-          transform: translateY(0);
-}
-
-.info .text {
-  margin-top: 0;
-  margin-bottom: 0;
-  padding: 0px 24px 20px;
-}
-
-.work-examples .title {
-  color: var(--title-text-color);
-  font-weight: bold;
-  font-size: 18px;
-  line-height: 2;
-  letter-spacing: 0.06em;
-}
-
-.work-examples .text {
-  color: var(--primary-text-color);
-  font-weight: normal;
-  font-size: 16px;
-  line-height: 1.88;
-  letter-spacing: 0.03em;
 }
 
 .footer {
